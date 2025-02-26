@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import "@/assets/fonts/stylesheet.css";
+@import "tailwindcss";
+:root{
+    --main-brown:#DBB690;
+}
+* {
+    font-family: 'HvDTrial Brandon Grotesque';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html[dir="rtl"] *:not(.pi){
+    font-family: "Cairo", serif ;
+}
