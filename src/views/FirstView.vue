@@ -4,6 +4,7 @@
     import Button from '@/components/Button.vue'
     import { useI18n } from 'vue-i18n';
     import {Motion} from 'motion-v'
+    
     const mainWrapper = ref();
     const stateComponent=ref(true)
     const router = useRouter();

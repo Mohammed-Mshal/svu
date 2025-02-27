@@ -4,6 +4,7 @@
     import Button from '@/components/Button.vue'
     import { useRouter } from "vue-router";
     import { useI18n } from "vue-i18n";
+    import {Motion} from 'motion-v'
     const {t}=useI18n()
     const stateComponent=ref(false)
     const mainWrapper = ref();
@@ -21,9 +22,10 @@
             stateComponent.value=false
             
             return new Promise(resolve => {
-                setTimeout(resolve, 500); // Match animation duration
+                setTimeout(resolve, 2000); // Match animation duration
             });
         }
+        return Promise.resolve()
     }
     // Only applies the animation when navigating away from this component
     router.beforeEach((to, from, next) => {
@@ -38,13 +40,64 @@
     <div class="first-section" ref="mainWrapper">
         <div class="container">
             <div class="content">
-                <h2 class="title">
+                <Motion
+                    :initial="{
+                        y:100,
+                        opacity:0
+                    }"
+                    :animate="{
+                        y:0,
+                        opacity:1
+                    }"
+                    :transition="{
+                        duration:.2,
+                        delay:4,
+                        type:'spring',
+                        stiffness:50,
+                        
+                    }"
+                    as="h2" class="title">
                     {{ t('firstSection.title') }}
-                </h2>
-                <div class="description">
+                </Motion>
+                <Motion 
+                    :initial="{
+                        y:100,
+                        opacity:0
+                    }"
+                    :animate="{
+                        y:0,
+                        opacity:1
+                    }"
+                    :transition="{
+                        duration:.2,
+                        delay:4,
+                        type:'spring',
+                        stiffness:50,
+                        
+                    }"
+                    as="div" class="description">
                     {{ t('firstSection.description') }}
-                </div>
-                    <Button :textInside="t('buttons.aboutUs')" icon="/src/assets/images/Sound.svg" />
+                </Motion>
+                <Motion 
+                    :initial="{
+                        y:100,
+                        opacity:0
+                    }"
+                    :animate="{
+                        y:0,
+                        opacity:1
+                    }"
+                    :transition="{
+                        duration:.2,
+                        delay:4,
+                        type:'spring',
+                        stiffness:50,
+                        
+                    }"
+                    class="mt-auto"
+                    as="div">
+                    <Button :textInside="t('buttons.aboutUs')" icon="/src/assets/images/Sound.svg" link="/home/details"/>
+                </Motion>
                 </div>
         </div>
         <div class="background">
@@ -105,7 +158,7 @@
         margin-inline-start: 0;
     }
     .animate-in-Section {
-        animation: slideUp 2s 2s ease forwards;
+        animation: slideUpSection 2s 2s ease forwards;
     }
     @keyframes slideUpSection {
         from {
@@ -120,7 +173,7 @@
         }
     }
     .animate-out-Section {
-        animation: slideHidden .5s ease forwards;
+        animation: slideHiddenSection 2s ease forwards;
     }
     @keyframes slideHiddenSection {
         from {
@@ -129,7 +182,7 @@
             pointer-events: all;
         }
         to {
-            transform: translateY(0);
+            transform: translateY(-100dvh);
             opacity: 0;
             pointer-events: none;
         }

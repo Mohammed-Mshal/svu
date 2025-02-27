@@ -6,7 +6,12 @@
     const route = useRoute()
     const intervalLoading=(target)=>{
       const intervalCounter=setInterval(() => {
-        counterState.value+=1
+        if (target<counterState.value) {
+          counterState.value-=1
+        }
+        else{
+          counterState.value+=1
+        }
         if (target==counterState.value) {
           clearInterval(intervalCounter)
         }
@@ -16,6 +21,9 @@
       if (newPath === '/home/'||newPath === '/home') {
         intervalLoading(30)
       }
+      if (newPath === '/home/details') {
+        intervalLoading(60)
+      }
     }, { immediate: true })
 </script>
 
@@ -23,8 +31,8 @@
   <div class="home ">
       <RouterView  v-slot="{ Component }">
         <Transition name="page" mode="out-in">
-        <component :is="Component" />
-      </Transition>
+          <component :is="Component" />
+        </Transition>
       </RouterView>
     <div class="container">
       <div class="counter">

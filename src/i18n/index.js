@@ -18,6 +18,14 @@ const messages = {
       about:'About Us',
       careers:'Careers',
       contact:'Contact Us'
+    },
+    listOptions:{
+      fitness:'Fitness',
+      wellness:'Wellness',
+      racketCenter:'Racket Center',
+      dining:'Dining',
+      poolAndBeach:'Pool And Beach',
+      spaAndBeauty:'Spa And Beauty'
     }
   },
   ar: {
@@ -39,6 +47,14 @@ const messages = {
       learnMore:'معرفة المزيد',
       aboutUs:'معلومات عنا'
     },
+    listOptions:{
+      fitness:'اللياقة البدنية',
+      wellness:'العافية',
+      racketCenter:'مركز الرياضات المضربية',
+      dining:'المطاعم',
+      poolAndBeach:'المسبح والشاطئ',
+      spaAndBeauty:'السبا والجمال'
+    }
   },
 };
 export const i18n = createI18n({
