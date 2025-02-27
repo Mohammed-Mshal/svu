@@ -46,7 +46,7 @@
 </script>
 <template>
     <div class="h-dvh page-content flex flex-col justify-center" v-if="stateComponent" ref="mainWrapper">
-        <div class="container lg:max-w-2xl sm:max-w-sm max-w-full w-xs sm:w-full flex-1 flex items-center">
+        <div class="container lg:max-w-2xl sm:max-w-sm max-w-full w-full flex-1 flex items-center">
             <div class="hero-title flex flex-col font-bold flex-1">
                 <h2 
                     v-for="(word,index) in wordsHero" 
