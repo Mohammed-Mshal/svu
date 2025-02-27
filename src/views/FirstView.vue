@@ -76,10 +76,31 @@
                             {{ letter }}
                         </Motion>
                     </div>
+                    <Motion
+                            as="div"
+                            :initial="{
+                                y:200,
+                                opacity:0
+                            }"
+                            :animate="{
+                                y:0,
+                                opacity:1
+                            }"
+                            :transition="{
+                                duration:0.3,
+                                type:'spring',
+                                mass:20,
+                                stiffness:200,
+                                damping:120,
+                                delay:2+indexLetter*0.2
+                            }"
+                            v-if="locale=='ar'">
+                        {{ word }}
+                    </Motion>
                 </h2>
             </div>
         </div>
-        <Button :textInside="'Enter'" link="/home" icon="/src/assets/images/Arrow.svg" firstView/>
+        <Button :textInside="`${t('buttons.enter')}`" link="/home" icon="@/assets/images/Arrow.svg" firstView/>
     </div>
 </template>
 
@@ -94,8 +115,14 @@
     .word{
         font-size: clamp(38px,7.4vw,120px);
     }
+    html[dir='rtl'] .word{
+        font-size: clamp(38px,10.4vw,100px);
+    }
     .word:nth-child(EVEN){
         text-align: right;
+    }
+    html[dir='rtl'] .word:nth-child(EVEN){
+        text-align:left;
     }
 
     .animate-in {

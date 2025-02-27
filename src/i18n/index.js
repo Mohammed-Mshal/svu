@@ -4,7 +4,8 @@ const messages = {
     buttons:{
       applyNow:'Apply Now',
       learnMore:'Learn More',
-      aboutUs:'About Us'
+      aboutUs:'About Us',
+      enter:'Enter'
     },
     firstView:{
       heroTitle:'LIFESTYLE MEETS WELLNESS SERENITY'
@@ -45,6 +46,7 @@ const messages = {
     buttons:{
       applyNow:'تقدم الآن',
       learnMore:'معرفة المزيد',
+      enter:'ادخل',
       aboutUs:'معلومات عنا'
     },
     listOptions:{
