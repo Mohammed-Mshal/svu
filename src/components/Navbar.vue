@@ -130,8 +130,8 @@
             border: none;
             justify-content: center;
             flex-direction: column;
-            background: #0000004f;
-            backdrop-filter: blur(2px);
+            background: #0000008f;
+            backdrop-filter: blur(6px);
             z-index: -1;
         }
         nav .listLinks.show{

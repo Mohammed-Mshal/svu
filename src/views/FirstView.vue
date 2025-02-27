@@ -26,6 +26,7 @@
                 setTimeout(resolve, 500); // Match animation duration
             });
         }
+        return Promise.resolve();
     }
     // Only applies the animation when navigating away from this component
     router.beforeEach((to, from, next) => {
@@ -87,6 +88,7 @@
     }
     .page-content {
         padding:40px 60px ;
+        flex: 1;
     }
     .word{
         font-size: clamp(38px,7.4vw,120px);

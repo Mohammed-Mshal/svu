@@ -1,13 +1,32 @@
 <script setup>
+    import {RouterView, useRoute} from 'vue-router'
     import {Motion} from 'motion-v'
-    import { ref } from 'vue'
+    import { ref, watch } from 'vue'
     const counterState=ref(0)
+    const route = useRoute()
+    const intervalLoading=(target)=>{
+      const intervalCounter=setInterval(() => {
+        counterState.value+=1
+        if (target==counterState.value) {
+          clearInterval(intervalCounter)
+        }
+      }, 100);
+    }
+    watch(() => route.path, (newPath) => {
+      if (newPath === '/home/'||newPath === '/home') {
+        intervalLoading(30)
+      }
+    }, { immediate: true })
 </script>
 
 <template>
   <div class="home ">
+      <RouterView  v-slot="{ Component }">
+        <Transition name="page" mode="out-in">
+        <component :is="Component" />
+      </Transition>
+      </RouterView>
     <div class="container">
-      
       <div class="counter">
         <Motion as="div">
           {{counterState<10?`0${counterState}`:counterState}}%
@@ -19,8 +38,10 @@
 
 <style>
   .home{
-    padding-block: 80px;
     z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
   .counter{
     width: 100%;
@@ -38,5 +59,10 @@
     padding-inline: 20px;
     margin-inline: auto;
     text-align: end;
+  }
+  @media (max-width:668px) {
+    .counter{
+      padding-block:16px;
+    }
   }
 </style>
