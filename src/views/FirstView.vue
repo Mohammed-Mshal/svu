@@ -86,8 +86,6 @@
         overflow: hidden;
     }
     .page-content {
-        opacity: 0;
-        transform: translateY(400px);
         padding:40px 60px ;
     }
     .word{
