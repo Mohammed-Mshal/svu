@@ -12,36 +12,120 @@
             text:t('listOptions.fitness'),
             linkDetails:'/home/details/1',
             linkPDF:'#',
+            childLinks:[
+              {
+                text:'Main Gym',
+                link:'/home/maingym'
+              },
+              {
+                text:'Female-Only Gym',
+                link:'/home/femaleonlygym'
+              },
+              {
+                text:'Dungeon Home',
+                link:'/home/dungeonhome'
+              },
+            ]
         },
         {
             id:'2',
             text:t('listOptions.wellness'),
             linkDetails:'/home/details/2',
             linkPDF:'#',
+            childLinks:[
+              {
+                text:'Main Gym',
+                link:'/home/maingym'
+              },
+              {
+                text:'Female-Only Gym',
+                link:'/home/femaleonlygym'
+              },
+              {
+                text:'Dungeon Home',
+                link:'/home/dungeonhome'
+              },
+            ]
         },
         {
             id:'3',
             text:t('listOptions.racketCenter'),
             linkDetails:'/home/details/3',
             linkPDF:'#',
+            childLinks:[
+              {
+                text:'Main Gym',
+                link:'/home/maingym'
+              },
+              {
+                text:'Female-Only Gym',
+                link:'/home/femaleonlygym'
+              },
+              {
+                text:'Dungeon Home',
+                link:'/home/dungeonhome'
+              },
+            ]
         },
         {
             id:'4',
             text:t('listOptions.dining'),
             linkDetails:'/home/details/4',
             linkPDF:'#',
+            childLinks:[
+              {
+                text:'Main Gym',
+                link:'/home/maingym'
+              },
+              {
+                text:'Female-Only Gym',
+                link:'/home/femaleonlygym'
+              },
+              {
+                text:'Dungeon Home',
+                link:'/home/dungeonhome'
+              },
+            ]
         },
         {
             id:'5',
             text:t('listOptions.poolAndBeach'),
             linkDetails:'/home/details/5',
             linkPDF:'#',
+            childLinks:[
+              {
+                text:'Main Gym',
+                link:'/home/maingym'
+              },
+              {
+                text:'Female-Only Gym',
+                link:'/home/femaleonlygym'
+              },
+              {
+                text:'Dungeon Home',
+                link:'/home/dungeonhome'
+              },
+            ]
         },
         {
             id:'6',
             text:t('listOptions.spaAndBeauty'),
             linkDetails:'/home/details/6',
             linkPDF:'#',
+            childLinks:[
+              {
+                text:'Main Gym',
+                link:'/home/maingym'
+              },
+              {
+                text:'Female-Only Gym',
+                link:'/home/femaleonlygym'
+              },
+              {
+                text:'Dungeon Home',
+                link:'/home/dungeonhome'
+              },
+            ]
         },
     ]
     })
@@ -59,6 +143,7 @@
         }
       }, 100);
     }
+    const currentPath=computed(()=>route.path)
     watch(() => route.path, (newPath) => {
       if (newPath === '/home/'||newPath === '/home') {
         intervalLoading(30)
@@ -76,7 +161,7 @@
           <component :is="Component" :listOptions="listOptions" />
         </Transition>
       </RouterView>
-    <div class="container">
+    <div class="container" v-if="currentPath==='/home'||currentPath==='/home/details'">
       <div class="counter">
         <Motion as="div">
           {{counterState<10?`0${counterState}`:counterState}}%

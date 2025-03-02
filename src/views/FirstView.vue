@@ -52,55 +52,32 @@
                     v-for="(word,index) in wordsHero" 
                     class="text-white word"
                     :key="index">
-                    <div v-if="locale=='en'">
-                        <Motion 
-                            as="span"
-                            :initial="{
-                                y:200,
-                                opacity:0
-                            }"
-                            :animate="{
-                                y:0,
-                                opacity:1
-                            }"
-                            :transition="{
-                                duration:0.3,
-                                type:'spring',
-                                mass:20,
-                                stiffness:200,
-                                damping:120,
-                                delay:2+indexLetter*0.2
-                            }"
-                            v-for="(letter, indexLetter) in word" :key="indexLetter"
-                            >
-                            {{ letter }}
-                        </Motion>
-                    </div>
-                    <Motion
-                            as="div"
-                            :initial="{
-                                y:200,
-                                opacity:0
-                            }"
-                            :animate="{
-                                y:0,
-                                opacity:1
-                            }"
-                            :transition="{
-                                duration:0.3,
-                                type:'spring',
-                                mass:20,
-                                stiffness:200,
-                                damping:120,
-                                delay:2+indexLetter*0.2
-                            }"
-                            v-if="locale=='ar'">
-                        {{ word }}
-                    </Motion>
+                    <Motion 
+                        as="span"
+                        :initial="{
+                            y:200,
+                            opacity:0
+                        }"
+                        :animate="{
+                            y:0,
+                            opacity:1
+                        }"
+                        :transition="{
+                            duration:0.3,
+                            type:'spring',
+                            mass:20,
+                            stiffness:200,
+                            damping:120,
+                            delay:2+indexLetter*0.2
+                        }"
+                        v-for="(letter, indexLetter) in word" :key="indexLetter"
+                        >
+                        {{ letter }}
+                    </Motion> 
                 </h2>
             </div>
         </div>
-        <Button :textInside="`${t('buttons.enter')}`" link="/home" icon="src/assets/images/Arrow.svg" firstView/>
+        <Button :textInside="`${t('buttons.enter')}`" link="/home" icon="src/assets/images/Arrow.svg" firstView :normalButton="false"/>
     </div>
 </template>
 

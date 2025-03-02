@@ -21,14 +21,14 @@
             stateComponent.value=false
             
             return new Promise(resolve => {
-                setTimeout(resolve, 2000); // Match animation duration
+                setTimeout(resolve, 1000); // Match animation duration
             });
         }
         return Promise.resolve()
     }
       // Only applies the animation when navigating away from this component
     router.beforeEach((to, from, next) => {
-        if (from.path === '/home') {
+        if (from.path === '/home/details') {
             handleBeforeRoute().then(() => next());
         } else {
             next();
@@ -69,7 +69,17 @@
         animation: slideUpSection 2s 2s ease forwards;
     }
     .animate-out-Details {
-        animation: slideHiddenSection 2s ease forwards;
+        animation: fadeOut 1s ease forwards;
+    }
+    @keyframes fadeOut {
+        from{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to{
+            transform: translateY(0);
+            opacity: 0;
+        }
     }
     .list-options{
         display: flex;
