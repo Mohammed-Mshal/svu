@@ -1,9 +1,51 @@
 <script setup>
     import {RouterView, useRoute} from 'vue-router'
     import {Motion} from 'motion-v'
-    import { ref, watch } from 'vue'
+    import { computed, ref, watch } from 'vue'
+    import { useI18n } from 'vue-i18n'
     const counterState=ref(0)
     const route = useRoute()
+    const listOptions=computed(()=>{
+        return [
+            {
+            id:'1',
+            text:t('listOptions.fitness'),
+            linkDetails:'/home/details/1',
+            linkPDF:'#',
+        },
+        {
+            id:'2',
+            text:t('listOptions.wellness'),
+            linkDetails:'/home/details/2',
+            linkPDF:'#',
+        },
+        {
+            id:'3',
+            text:t('listOptions.racketCenter'),
+            linkDetails:'/home/details/3',
+            linkPDF:'#',
+        },
+        {
+            id:'4',
+            text:t('listOptions.dining'),
+            linkDetails:'/home/details/4',
+            linkPDF:'#',
+        },
+        {
+            id:'5',
+            text:t('listOptions.poolAndBeach'),
+            linkDetails:'/home/details/5',
+            linkPDF:'#',
+        },
+        {
+            id:'6',
+            text:t('listOptions.spaAndBeauty'),
+            linkDetails:'/home/details/6',
+            linkPDF:'#',
+        },
+    ]
+    })
+    const {t}=useI18n()
     const intervalLoading=(target)=>{
       const intervalCounter=setInterval(() => {
         if (target<counterState.value) {
@@ -31,7 +73,7 @@
   <div class="home ">
       <RouterView  v-slot="{ Component }">
         <Transition name="page" mode="out-in">
-          <component :is="Component" />
+          <component :is="Component" :listOptions="listOptions" />
         </Transition>
       </RouterView>
     <div class="container">

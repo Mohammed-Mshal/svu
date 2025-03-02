@@ -14,6 +14,15 @@
         firstView:{
             type:Boolean,
             default:false,
+        },
+        normalButton:{
+            type:Boolean,
+            default:true,
+            required:false
+        },
+        widthFull:{
+            type:Boolean,
+            default:true,
             required:true
         },
         icon:{
@@ -23,25 +32,43 @@
     })
 </script>
 <template>
-    <RouterLink     
+    <RouterLink  
+        v-if="props.link"   
         :to="props.link" 
-        :class="`custom-button text-white flex gap-4 items-center justify-between font-bold ${props.firstView&&'firstView'}`">
+        :class="`custom-button text-white flex gap-4 items-center justify-between font-bold ${props.firstView&&'firstView'} ${normalButton&&'normal-floating'} ${widthFull?'widthFullInSmall':'w-fit'}`">
         {{ props.textInside }}
         <img :src="props.icon" alt="Icon" :class="`${locale==='ar'&&'rotate-180'}`">
     </RouterLink>
+    <button  
+        v-else   
+        :to="props.link" 
+        :class="`custom-button text-white flex gap-4 items-center justify-between font-bold ${props.firstView&&'firstView'} ${normalButton&&'normal-floating'} ${widthFull?'widthFullInSmall':'w-fit'}`">
+        {{ props.textInside }}
+        <img :src="props.icon" alt="Icon" :class="`${locale==='ar'&&'rotate-180'}`">
+    </button>
 </template>
 
 <style lang="css" scoped>
     .custom-button{
         font-size: clamp(16px,4.4vw,21px) ;
         min-width: 150px;
-        width: fit-content;
         padding: 8px 12px;
         border: 2px solid white;
         margin-inline-start: auto;
         position: relative;
         transition: .3s all ease-in-out;    
         z-index: 1;
+    }
+    .custom-button.normal-floating{
+        margin-inline-start: 0;
+    }
+    .custom-button.widthFullInSmall{
+        width: fit-content;
+    }
+    @media (max-width:448px) {
+        .custom-button.widthFullInSmall{
+            width: 100%;
+        }
     }
     .custom-button::before{
         position: absolute;

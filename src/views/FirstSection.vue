@@ -96,7 +96,7 @@
                     }"
                     class="mt-auto"
                     as="div">
-                    <Button :textInside="t('buttons.aboutUs')" icon="/src/assets/images/Sound.svg" link="/home/details"/>
+                    <Button :textInside="t('buttons.aboutUs')" icon="src/assets/images/Sound.svg" link="/home/details"/>
                 </Motion>
                 </div>
         </div>

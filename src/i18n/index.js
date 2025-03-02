@@ -5,7 +5,9 @@ const messages = {
       applyNow:'Apply Now',
       learnMore:'Learn More',
       aboutUs:'About Us',
-      enter:'Enter'
+      enter:'Enter',
+      exploreMore:'Explore More',
+      downloadPDF:'Download PDF',
     },
     firstView:{
       heroTitle:'LIFESTYLE MEETS WELLNESS SERENITY'
@@ -47,7 +49,9 @@ const messages = {
       applyNow:'تقدم الآن',
       learnMore:'معرفة المزيد',
       enter:'ادخل',
-      aboutUs:'معلومات عنا'
+      aboutUs:'معلومات عنا',
+      exploreMore:'استكشاف المزيد',
+      downloadPDF:'تحميل PDF',
     },
     listOptions:{
       fitness:'اللياقة البدنية',

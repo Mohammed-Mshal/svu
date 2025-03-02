@@ -3,6 +3,7 @@
     import { useRouter } from "vue-router";
     import { useI18n } from "vue-i18n";
     import {Motion} from 'motion-v'
+    import Button from '@/components/Button.vue'
     const {t}=useI18n()
     const stateComponent=ref(false)
     const optionsWrapper = ref();
@@ -33,56 +34,32 @@
             next();
         }
     });
-    const listOptions=computed(()=>{
-        return [
-            {
-            text:t('listOptions.fitness'),
-            linkDetails:'/exploreMore',
-            linkPDF:'#',
-        },
-        {
-            text:t('listOptions.wellness'),
-            linkDetails:'/exploreMore',
-            linkPDF:'#',
-        },
-        {
-            text:t('listOptions.racketCenter'),
-            linkDetails:'/exploreMore',
-            linkPDF:'#',
-        },
-        {
-            text:t('listOptions.dining'),
-            linkDetails:'/exploreMore',
-            linkPDF:'#',
-        },
-        {
-            text:t('listOptions.poolAndBeach'),
-            linkDetails:'/exploreMore',
-            linkPDF:'#',
-        },
-        {
-            text:t('listOptions.spaAndBeauty'),
-            linkDetails:'/exploreMore',
-            linkPDF:'#',
-        },
-    ]
-    })
     const activeOption=ref(null)
     const toggleActiveOption=(newOption)=>{
         activeOption.value=newOption===activeOption.value?null:newOption
     }
-
+    
+    const props=defineProps({
+        listOptions:{
+            type:Array,
+            required:true
+        }
+    })
 </script>
 <template>
     <div class="list-options" ref="optionsWrapper">
         <div class="container">
-            <ul class="list flex flex-col gap-8">
-                <li v-for="option in listOptions" :key="option.text">
+            <ul class="list flex flex-1 justify-center flex-col gap-8">
+                <li v-for="option in props.listOptions" :key="option.text">
                    <button class="cursor-pointer font-bold" :class="`${activeOption===option.text&&'active'}`" @click="toggleActiveOption(option.text)">
                         {{ option.text }}
                    </button>
                 </li>
             </ul>
+            <div :class="`actions justify-center md:justify-end flex-wrap ${activeOption&&'show'}`">
+                <Button widthFull :textInside="t('buttons.exploreMore')" icon="/src/assets/images/Arrow.svg" :link="listOptions.filter((value)=>value.text===activeOption)[0]?.linkDetails" />
+                <Button widthFull :textInside="t('buttons.downloadPDF')" icon="/src/assets/images/Arrow.svg" :link="listOptions.filter((value)=>value.text===activeOption)[0]?.linkPDF" />
+            </div>
         </div>
     </div>
 </template>
@@ -105,7 +82,11 @@
     }
     .list-options .container{
         max-width: 1771px;
-        padding-inline: 20px;
+        padding: 120px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
     }
     .list-options .container .list button{
         transition: .3s all ease-in-out;
@@ -156,5 +137,16 @@
     }
     .list-options .container .list button:hover{
         color: var(--main-brown);
+    }
+    .list-options .container .actions{
+        display: flex;
+        gap: 18px;
+        translate: 0 80px;
+        opacity: 0;
+        transition: 0.8s all ease-in-out;
+    }
+    .list-options .container .actions.show{
+        opacity: 1;
+        translate: 0 0;
     }
 </style>
