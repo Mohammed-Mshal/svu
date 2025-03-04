@@ -9,7 +9,7 @@
 <template>
     <div class="loading">
         <div class="container">
-            
+            {{ props.titleLoading }}
         </div>
     </div>
 </template>
