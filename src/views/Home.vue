@@ -15,15 +15,15 @@
             childLinks:[
               {
                 text:'Main Gym',
-                link:'/home/maingym'
+                link:'/home/detail/maingym'
               },
               {
                 text:'Female-Only Gym',
-                link:'/home/femaleonlygym'
+                link:'/home/detail/femaleonlygym'
               },
               {
                 text:'Dungeon Home',
-                link:'/home/dungeonhome'
+                link:'/home/detail/dungeonhome'
               },
             ]
         },
@@ -55,15 +55,15 @@
             childLinks:[
               {
                 text:'Main Gym',
-                link:'/home/maingym'
+                link:'/home/detail/maingym'
               },
               {
                 text:'Female-Only Gym',
-                link:'/home/femaleonlygym'
+                link:'/home/detail/femaleonlygym'
               },
               {
                 text:'Dungeon Home',
-                link:'/home/dungeonhome'
+                link:'/home/detail/dungeonhome'
               },
             ]
         },
@@ -75,15 +75,15 @@
             childLinks:[
               {
                 text:'Main Gym',
-                link:'/home/maingym'
+                link:'/home/detail/maingym'
               },
               {
                 text:'Female-Only Gym',
-                link:'/home/femaleonlygym'
+                link:'/home/detail/femaleonlygym'
               },
               {
                 text:'Dungeon Home',
-                link:'/home/dungeonhome'
+                link:'/home/detail/dungeonhome'
               },
             ]
         },
@@ -95,15 +95,15 @@
             childLinks:[
               {
                 text:'Main Gym',
-                link:'/home/maingym'
+                link:'/home/detail/maingym'
               },
               {
                 text:'Female-Only Gym',
-                link:'/home/femaleonlygym'
+                link:'/home/detail/femaleonlygym'
               },
               {
                 text:'Dungeon Home',
-                link:'/home/dungeonhome'
+                link:'/home/detail/dungeonhome'
               },
             ]
         },
@@ -115,15 +115,15 @@
             childLinks:[
               {
                 text:'Main Gym',
-                link:'/home/maingym'
+                link:'/home/detail/maingym'
               },
               {
                 text:'Female-Only Gym',
-                link:'/home/femaleonlygym'
+                link:'/home/detail/femaleonlygym'
               },
               {
                 text:'Dungeon Home',
-                link:'/home/dungeonhome'
+                link:'/home/detail/dungeonhome'
               },
             ]
         },

@@ -26,14 +26,13 @@
     }
     // Only applies the animation when navigating away from this component
     router.beforeEach((to, from, next) => {
-        if (from.path === '/home/details') {
+        if (from.path === `/home/details/${route.params.id}`) {
             handleBeforeRoute().then(() => next());
         } else {
             next();
         }
     });
     const route=useRoute()
-    console.log(route.params);
     const props=defineProps({
         listOptions:{
             type:Array,

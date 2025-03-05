@@ -1,7 +1,7 @@
 <script setup>
     const props=defineProps({
         titleLoading:{
-            type:string,
+            type:String,
             required:true
         },
     })

@@ -4,6 +4,7 @@ import FirstView from '@/views/FirstView.vue'
 import FirstSection from '@/views/FirstSection.vue'
 import ListOptions from '@/views/ListOptions.vue'
 import Details from '@/views/Details.vue'
+import Detail from '@/views/Detail.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -33,9 +34,9 @@ const router = createRouter({
           component:Details
         },
         {
-          path:'/home/details/:id/:sectionName',
+          path:'/home/detail/:sectionName',
           name:':sectionName',
-          component:Details
+          component:Detail
         }
       ]
     },
