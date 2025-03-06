@@ -80,10 +80,21 @@
             top: 140%;
         }
     }
+    html[dir="rtl"] .loading .counter-loading{
+        left: auto;
+        right: 100%;
+        @media (max-width:886px) {
+            right: auto;
+            left: 50%;
+            translate: -50% -50%;
+            top: 140%;
+        }
+    }
     .loading .title{
         color: #82A395;
-        font-size: clamp(36px,4.8vw,80px);
+        font-size: clamp(36px,3.6vw,80px);
         font-weight: bold;
+        text-align: center;
     }
     .animate-out-loading{
         animation: slideHiddenSection 2s ease forwards;

@@ -30,6 +30,11 @@ const messages = {
       dining:'Dining',
       poolAndBeach:'Pool And Beach',
       spaAndBeauty:'Spa And Beauty'
+    },
+    childListOption:{
+      mainGym:'Main Gym',
+      femaleOnly:'صالة ألعاب رياضية للسيدات فقط',
+      dungeonHome:'منزل الزنزانة',
     }
   },
   ar: {
@@ -62,6 +67,11 @@ const messages = {
       dining:'المطاعم',
       poolAndBeach:'المسبح والشاطئ',
       spaAndBeauty:'السبا والجمال'
+    },
+    childListOption:{
+      mainGym:'الصالة الرياضية الرئيسية',
+      femaleOnly:'صالة ألعاب رياضية للسيدات فقط',
+      dungeonHome:'منزل الزنزانة',
     }
   },
 };

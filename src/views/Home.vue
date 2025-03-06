@@ -4,6 +4,7 @@
     import { computed, ref, watch } from 'vue'
     import { useI18n } from 'vue-i18n'
     const counterState=ref(0)
+    const {t}=useI18n()
     const route = useRoute()
     const listOptions=computed(()=>{
         return [
@@ -14,15 +15,15 @@
             linkPDF:'#',
             childLinks:[
               {
-                text:'Main Gym',
+                text:t('childListOption.mainGym'),
                 link:'/home/detail/maingym'
               },
               {
-                text:'Female-Only Gym',
+                text:t('childListOption.femaleOnly'),
                 link:'/home/detail/femaleonlygym'
               },
               {
-                text:'Dungeon Home',
+                text:t('childListOption.dungeonHome'),
                 link:'/home/detail/dungeonhome'
               },
             ]
@@ -34,15 +35,15 @@
             linkPDF:'#',
             childLinks:[
               {
-                text:'Main Gym',
+                text:t('childListOption.mainGym'),
                 link:'/home/maingym'
               },
               {
-                text:'Female-Only Gym',
+                text:t('childListOption.femaleOnly'),
                 link:'/home/femaleonlygym'
               },
               {
-                text:'Dungeon Home',
+                text:t('childListOption.dungeonHome'),
                 link:'/home/dungeonhome'
               },
             ]
@@ -54,15 +55,15 @@
             linkPDF:'#',
             childLinks:[
               {
-                text:'Main Gym',
+                text:t('childListOption.mainGym'),
                 link:'/home/detail/maingym'
               },
               {
-                text:'Female-Only Gym',
+                text:t('childListOption.femaleOnly'),
                 link:'/home/detail/femaleonlygym'
               },
               {
-                text:'Dungeon Home',
+                text:t('childListOption.dungeonHome'),
                 link:'/home/detail/dungeonhome'
               },
             ]
@@ -74,15 +75,15 @@
             linkPDF:'#',
             childLinks:[
               {
-                text:'Main Gym',
+                text:t('childListOption.mainGym'),
                 link:'/home/detail/maingym'
               },
               {
-                text:'Female-Only Gym',
+                text:t('childListOption.femaleOnly'),
                 link:'/home/detail/femaleonlygym'
               },
               {
-                text:'Dungeon Home',
+                text:t('childListOption.dungeonHome'),
                 link:'/home/detail/dungeonhome'
               },
             ]
@@ -94,15 +95,15 @@
             linkPDF:'#',
             childLinks:[
               {
-                text:'Main Gym',
+                text:t('childListOption.mainGym'),
                 link:'/home/detail/maingym'
               },
               {
-                text:'Female-Only Gym',
+                text:t('childListOption.femaleOnly'),
                 link:'/home/detail/femaleonlygym'
               },
               {
-                text:'Dungeon Home',
+                text:t('childListOption.dungeonHome'),
                 link:'/home/detail/dungeonhome'
               },
             ]
@@ -114,22 +115,21 @@
             linkPDF:'#',
             childLinks:[
               {
-                text:'Main Gym',
+                text:t('childListOption.mainGym'),
                 link:'/home/detail/maingym'
               },
               {
-                text:'Female-Only Gym',
+                text:t('childListOption.femaleOnly'),
                 link:'/home/detail/femaleonlygym'
               },
               {
-                text:'Dungeon Home',
+                text:t('childListOption.dungeonHome'),
                 link:'/home/detail/dungeonhome'
               },
             ]
         },
     ]
     })
-    const {t}=useI18n()
     const intervalLoading=(target)=>{
       const intervalCounter=setInterval(() => {
         if (target<counterState.value) {
