@@ -8,11 +8,27 @@
     const {t}=useI18n()
     const stateComponent=ref(false)
     const detailWrapper = ref();
-    
+    const sectionName=ref('')
+    const props=defineProps({
+        listOptions:{
+            type:Array,
+            required:true
+        }
+    })
     onMounted(() => {
         stateComponent.value=true
         detailWrapper.value.classList.add('animate-in-Section')
+        props.listOptions.forEach((val)=>{
+            val.childLinks.forEach((e)=>{
+                
+                if (e.link===router.currentRoute.value.path) {
+                    sectionName.value=e.text
+                }
+            })
+        })
+
     });
+    
     // Function will called to add animation of unmounted to component when the detailWrapper Ref is exist
     const handleBeforeRoute = () => {
         if (detailWrapper.value) {
@@ -35,11 +51,13 @@
             next();
         }
     });
+  
+    
 </script>
 
 <template>
     <div class="detail" ref="detailWrapper">
-        <Loading :titleLoading="`${route.params.sectionName}`" />
+        <Loading :titleLoading="`${sectionName}`" />
     </div>
 </template>
 

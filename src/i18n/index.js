@@ -1,6 +1,7 @@
 import { createI18n } from "vue-i18n";
 const messages = {
   en: {
+    loading:'Loading',
     buttons:{
       applyNow:'Apply Now',
       learnMore:'Learn More',
@@ -32,6 +33,7 @@ const messages = {
     }
   },
   ar: {
+    loading:'جاري التحميل',
     firstView:{
       heroTitle:'أسلوب الحياة يلتقي بالعافية والسكينة'
     },

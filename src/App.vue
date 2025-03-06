@@ -12,7 +12,7 @@
 </script>
 
 <template>
-  <header v-if="route.path!=='/'">
+  <header v-if="route.path!=='/'&&!route.path.startsWith('/home/detail/')">
     <Navbar />
   </header>
   <main class="bg-black min-h-dvh relative flex">
