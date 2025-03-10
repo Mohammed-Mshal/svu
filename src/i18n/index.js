@@ -33,8 +33,8 @@ const messages = {
     },
     childListOption:{
       mainGym:'Main Gym',
-      femaleOnly:'صالة ألعاب رياضية للسيدات فقط',
-      dungeonHome:'منزل الزنزانة',
+      femaleOnly:'Female-Only Gym',
+      dungeonHome:'Dungeon Home',
     }
   },
   ar: {

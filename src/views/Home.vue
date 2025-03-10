@@ -16,15 +16,34 @@
             childLinks:[
               {
                 text:t('childListOption.mainGym'),
-                link:'/home/detail/maingym'
+                link:'/home/detail/maingym',
+                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
               },
               {
                 text:t('childListOption.femaleOnly'),
-                link:'/home/detail/femaleonlygym'
+                link:'/home/detail/femaleonlygym',
+                 description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                   images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
+                
               },
               {
                 text:t('childListOption.dungeonHome'),
-                link:'/home/detail/dungeonhome'
+                link:'/home/detail/dungeonhome',
+                 description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                    images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
               },
             ]
         },
@@ -36,15 +55,34 @@
             childLinks:[
               {
                 text:t('childListOption.mainGym'),
-                link:'/home/maingym'
+                link:'/home/detail/maingym',
+                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
               },
               {
                 text:t('childListOption.femaleOnly'),
-                link:'/home/femaleonlygym'
+                link:'/home/detail/femaleonlygym',
+                                images:[
+                                    images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
+                
               },
               {
                 text:t('childListOption.dungeonHome'),
-                link:'/home/dungeonhome'
+                link:'/home/detail/dungeonhome',
+                                   images:[
+                                       images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
               },
             ]
         },
@@ -56,15 +94,32 @@
             childLinks:[
               {
                 text:t('childListOption.mainGym'),
-                link:'/home/detail/maingym'
+                link:'/home/detail/maingym',
+                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
               },
               {
                 text:t('childListOption.femaleOnly'),
-                link:'/home/detail/femaleonlygym'
+                link:'/home/detail/femaleonlygym',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
+                
               },
               {
                 text:t('childListOption.dungeonHome'),
-                link:'/home/detail/dungeonhome'
+                link:'/home/detail/dungeonhome',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
               },
             ]
         },
@@ -76,15 +131,32 @@
             childLinks:[
               {
                 text:t('childListOption.mainGym'),
-                link:'/home/detail/maingym'
+                link:'/home/detail/maingym',
+                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
               },
               {
                 text:t('childListOption.femaleOnly'),
-                link:'/home/detail/femaleonlygym'
+                link:'/home/detail/femaleonlygym',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
+                
               },
               {
                 text:t('childListOption.dungeonHome'),
-                link:'/home/detail/dungeonhome'
+                link:'/home/detail/dungeonhome',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
               },
             ]
         },
@@ -96,15 +168,32 @@
             childLinks:[
               {
                 text:t('childListOption.mainGym'),
-                link:'/home/detail/maingym'
+                link:'/home/detail/maingym',
+                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
               },
               {
                 text:t('childListOption.femaleOnly'),
-                link:'/home/detail/femaleonlygym'
+                link:'/home/detail/femaleonlygym',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
+                
               },
               {
                 text:t('childListOption.dungeonHome'),
-                link:'/home/detail/dungeonhome'
+                link:'/home/detail/dungeonhome',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
               },
             ]
         },
@@ -116,15 +205,32 @@
             childLinks:[
               {
                 text:t('childListOption.mainGym'),
-                link:'/home/detail/maingym'
+                link:'/home/detail/maingym',
+                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
               },
               {
                 text:t('childListOption.femaleOnly'),
-                link:'/home/detail/femaleonlygym'
+                link:'/home/detail/femaleonlygym',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
+                
               },
               {
                 text:t('childListOption.dungeonHome'),
-                link:'/home/detail/dungeonhome'
+                link:'/home/detail/dungeonhome',
+                images:[
+                  '@/assets/images/gallery1',
+                  '@/assets/images/gallery2',
+                  '@/assets/images/gallery3',
+                ]
               },
             ]
         },
