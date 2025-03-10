@@ -44,7 +44,7 @@
         :to="props.link" 
         :class="`custom-button text-white flex gap-4 items-center justify-between font-bold ${props.firstView&&'firstView'} ${normalButton&&'normal-floating'} ${widthFull?'widthFullInSmall':'w-fit'}`">
         {{ props.textInside }}
-        <img :src="props.icon" alt="Icon" :class="`${locale==='ar'&&'rotate-180'}`">
+        <img :src="require(props.icon)" alt="Icon" :class="`${locale==='ar'&&'rotate-180'}`">
     </button>
 </template>
 
