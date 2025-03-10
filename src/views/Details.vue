@@ -44,7 +44,7 @@
 </script>
 
 <template>
-    <div class="detail" ref="detailWrapper">
+    <div class="detailWrapper" ref="detailWrapper">
         <div class="container">
             <div class="header">
                 <h2 class="title">
@@ -126,7 +126,7 @@
             opacity:1;
         }
     }
-    .detail{
+    .detailWrapper{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -137,7 +137,7 @@
         opacity: 0;
         height: 100%;
     }
-    .detail .container{
+    .detailWrapper .container{
         max-width: 1771px;
         display: flex;
         flex-direction: column;
@@ -146,20 +146,20 @@
         padding-inline: 20px;
         gap: 60px;
     }
-    .detail .container .header{
+    .detailWrapper .container .header{
         text-align: center;
     }
-    .detail .container .word{
+    .detailWrapper .container .word{
         font-size: clamp(38px,7.4vw,120px);
         font-weight: bold;
     }   
-    .detail  .content {
+    .detailWrapper  .content {
         width: 100%;
         position: relative;
         overflow: hidden;
     }
     
-    .detail  .content .container{
+    .detailWrapper  .content .container{
         padding-block: 32px;
         display: flex;
         justify-content: space-around;
@@ -169,10 +169,10 @@
         position: static;
         
     }
-    .detail  .content .container .item{
+    .detailWrapper  .content .container .item{
         position:static;
     }
-    .detail  .content .container .item .overlayItem{
+    .detailWrapper  .content .container .item .overlayItem{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -187,16 +187,16 @@
         font-weight: bold;
         color: #82A395;
     }
-    .detail  .content .container .item .overlayTitle{
+    .detailWrapper  .content .container .item .overlayTitle{
         translate: 0 80px;
         opacity: 0;
         transition: .5s all ease-in-out;
     }
-    .detail  .content .container .item:hover .overlayTitle{
+    .detailWrapper  .content .container .item:hover .overlayTitle{
         translate: 0 0;
         opacity: 1;
     }
-    .detail  .content .container .item .overlayItem:before{
+    .detailWrapper  .content .container .item .overlayItem:before{
         content: "";
         position: absolute;
         width: 100%;
@@ -207,13 +207,13 @@
         background: #628778;
         transition: .5s all ease-in-out;
     }
-    .detail  .content .container .item:hover .overlayItem:before{
+    .detailWrapper  .content .container .item:hover .overlayItem:before{
         height: 100%;
     }
-    .detail .container .index-item{
+    .detailWrapper .container .index-item{
         font-size: 14px;
     }
-    .detail .container .title-item{
+    .detailWrapper .container .title-item{
         font-weight: bold;
     }
 </style>

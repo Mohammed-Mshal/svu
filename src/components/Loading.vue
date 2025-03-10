@@ -28,7 +28,7 @@
     onMounted(()=>{
         setTimeout(() => {
             intervalLoading()
-        }, 4000);
+        }, 3000);
     })
 </script>
 <template>

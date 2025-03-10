@@ -17,32 +17,56 @@
               {
                 text:t('childListOption.mainGym'),
                 link:'/home/detail/maingym',
-                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
               },
               {
                 text:t('childListOption.femaleOnly'),
                 link:'/home/detail/femaleonlygym',
-                 description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                 description:`
+                 Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                 `,
                    images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
                 
               },
               {
                 text:t('childListOption.dungeonHome'),
                 link:'/home/detail/dungeonhome',
-                 description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                 description:`
+                 Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                 `,
                     images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
               },
             ]
@@ -56,32 +80,56 @@
               {
                 text:t('childListOption.mainGym'),
                 link:'/home/detail/maingym',
-                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
               },
               {
                 text:t('childListOption.femaleOnly'),
                 link:'/home/detail/femaleonlygym',
-                                images:[
-                                    images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
+                images:[
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
                 
               },
               {
                 text:t('childListOption.dungeonHome'),
                 link:'/home/detail/dungeonhome',
-                                   images:[
-                                       images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
+                images:[
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
               },
             ]
@@ -95,30 +143,56 @@
               {
                 text:t('childListOption.mainGym'),
                 link:'/home/detail/maingym',
-                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
               },
               {
                 text:t('childListOption.femaleOnly'),
                 link:'/home/detail/femaleonlygym',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
                 
               },
               {
                 text:t('childListOption.dungeonHome'),
                 link:'/home/detail/dungeonhome',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
               },
             ]
@@ -132,30 +206,56 @@
               {
                 text:t('childListOption.mainGym'),
                 link:'/home/detail/maingym',
-                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
               },
               {
                 text:t('childListOption.femaleOnly'),
                 link:'/home/detail/femaleonlygym',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
                 
               },
               {
                 text:t('childListOption.dungeonHome'),
                 link:'/home/detail/dungeonhome',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
               },
             ]
@@ -169,30 +269,56 @@
               {
                 text:t('childListOption.mainGym'),
                 link:'/home/detail/maingym',
-                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
               },
               {
                 text:t('childListOption.femaleOnly'),
                 link:'/home/detail/femaleonlygym',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
                 
               },
               {
                 text:t('childListOption.dungeonHome'),
                 link:'/home/detail/dungeonhome',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
               },
             ]
@@ -206,30 +332,56 @@
               {
                 text:t('childListOption.mainGym'),
                 link:'/home/detail/maingym',
-                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur, dicta nemo voluptas veniam eaque exercitationem iure quos odio magnam perspiciatis qui illo hic! Fugiat eligendi perspiciatis officiis reprehenderit facilis?',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
               },
               {
                 text:t('childListOption.femaleOnly'),
                 link:'/home/detail/femaleonlygym',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
                 
               },
               {
                 text:t('childListOption.dungeonHome'),
                 link:'/home/detail/dungeonhome',
+                description:`
+                Main Gym With the latest Technogym equipment and
+                    machines, our large main gym is built for your
+                    strength and cardio exercises. Female-Only Gym
+                    To ensure the comfort and privacy of our
+                    members, SVN provides a fully-equipped female
+                    only gym area.
+                    Dungeon home of heavy-lifting and functional training For members that prefer a secluded, dark and industrial workout space, we offer the Dungeon area- consisting of a functional training area, spinning studio & Les Mills and TRX studio.  
+                `,
                 images:[
-                  '@/assets/images/gallery1',
-                  '@/assets/images/gallery2',
-                  '@/assets/images/gallery3',
+                  '/src/assets/images/gallery1.png',
+                  '/src/assets/images/gallery2.png',
+                  '/src/assets/images/gallery3.png',
                 ]
               },
             ]
