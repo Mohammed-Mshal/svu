@@ -77,7 +77,7 @@
                 </h2>
             </div>
         </div>
-        <Button :textInside="`${t('buttons.enter')}`" link="/home" icon="src/assets/images/Arrow.svg" firstView :normalButton="false"/>
+        <Button :textInside="`${t('buttons.enter')}`" link="/home" icon="/src/assets/images/Arrow.svg" firstView :normalButton="false"/>
     </div>
 </template>
 
