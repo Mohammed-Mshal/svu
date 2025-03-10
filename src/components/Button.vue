@@ -27,16 +27,8 @@
             required:true
         },
         icon:{
-            type:String,
+            type:[String, Number, Object, Array, Boolean, Function, Symbol],
             required:true
-        }
-    })
-
-    const iconSrc = computed(() => {
-        try {
-            return new URL(props.icon, import.meta.url).href
-        } catch {
-            return props.icon
         }
     })
 </script>
@@ -53,7 +45,7 @@
         :to="props.link" 
         :class="`custom-button text-white flex gap-4 items-center justify-between font-bold ${props.firstView&&'firstView'} ${normalButton&&'normal-floating'} ${widthFull?'widthFullInSmall':'w-fit'}`">
         {{ props.textInside }}
-        <img :src="iconSrc" alt="Icon" :class="`${locale==='ar'&&'rotate-180'}`">
+        <img :src="props.icon" alt="Icon" :class="`${locale==='ar'&&'rotate-180'}`">
     </button>
 </template>
 

@@ -4,7 +4,7 @@
     import Button from '@/components/Button.vue'
     import { useI18n } from 'vue-i18n';
     import {Motion} from 'motion-v'
-    
+    import ArrowIcon from '@/assets/images/Arrow.svg'
     const mainWrapper = ref();
     const stateComponent=ref(true)
     const router = useRouter();
@@ -77,7 +77,7 @@
                 </h2>
             </div>
         </div>
-        <Button :textInside="`${t('buttons.enter')}`" link="/home" icon="src/assets/images/Arrow.svg" firstView :normalButton="false"/>
+        <Button :textInside="`${t('buttons.enter')}`" link="/home" :icon="ArrowIcon" firstView :normalButton="false"/>
     </div>
 </template>
 

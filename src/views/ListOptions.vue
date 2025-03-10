@@ -4,6 +4,7 @@
     import { useI18n } from "vue-i18n";
     import {Motion} from 'motion-v'
     import Button from '@/components/Button.vue'
+    import ArrowIcon from '@/assets/images/Arrow.svg'
     const {t}=useI18n()
     const stateComponent=ref(false)
     const optionsWrapper = ref();
@@ -57,8 +58,8 @@
                 </li>
             </ul>
             <div :class="`actions justify-center md:justify-end flex-wrap ${activeOption&&'show'}`">
-                <Button widthFull :textInside="t('buttons.exploreMore')" icon="/src/assets/images/Arrow.svg" :link="listOptions.filter((value)=>value.text===activeOption)[0]?.linkDetails" />
-                <Button widthFull :textInside="t('buttons.downloadPDF')" icon="/src/assets/images/Arrow.svg" :link="listOptions.filter((value)=>value.text===activeOption)[0]?.linkPDF" />
+                <Button widthFull :textInside="t('buttons.exploreMore')" :icon="ArrowIcon" :link="listOptions.filter((value)=>value.text===activeOption)[0]?.linkDetails" />
+                <Button widthFull :textInside="t('buttons.downloadPDF')" :icon="ArrowIcon" :link="listOptions.filter((value)=>value.text===activeOption)[0]?.linkPDF" />
             </div>
         </div>
     </div>

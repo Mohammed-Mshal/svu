@@ -5,6 +5,7 @@
     import { useRouter } from "vue-router";
     import { useI18n } from "vue-i18n";
     import {Motion} from 'motion-v'
+    import Sound from '@/assets/images/Sound.svg'
     const {t}=useI18n()
     const stateComponent=ref(false)
     const mainWrapper = ref();
@@ -96,7 +97,7 @@
                     }"
                     class="mt-auto"
                     as="div">
-                    <Button :textInside="t('buttons.aboutUs')" icon="src/assets/images/Sound.svg" link="/home/details"/>
+                    <Button :textInside="t('buttons.aboutUs')" :icon="Sound" link="/home/details"/>
                 </Motion>
                 </div>
         </div>
