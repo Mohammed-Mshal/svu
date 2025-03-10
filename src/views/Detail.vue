@@ -9,7 +9,9 @@
     import {EffectFade,Autoplay} from 'swiper/modules';
     import 'swiper/css';
     import 'swiper/css/effect-fade';
-    
+    import Image1 from '@/assets/images/gallery1.png'
+    import Image2 from '@/assets/images/gallery2.png'
+    import Image3 from '@/assets/images/gallery3.png'
     const router=useRouter()
     const route=useRoute()
     const {t}=useI18n()
@@ -139,9 +141,19 @@
                             :loop="true"
                             effect="fade"
                         >
-                            <swiper-slide v-for="(slide,index) in elementDetail.images" :key="index">
+                            <swiper-slide>
                                 <div class="container-slide">
-                                    <img :src="slide" alt="Gallery">
+                                    <img :src="Image1" alt="Gallery">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="container-slide">
+                                    <img :src="Image2" alt="Gallery">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="container-slide">
+                                    <img :src="Image3" alt="Gallery">
                                 </div>
                             </swiper-slide>
                         </Swiper>
