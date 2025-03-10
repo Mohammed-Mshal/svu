@@ -1,4 +1,5 @@
 <script setup>
+    import { computed } from 'vue'
     import { useI18n } from 'vue-i18n'
     import {RouterLink} from 'vue-router'
     const {locale}=useI18n()
@@ -30,6 +31,14 @@
             required:true
         }
     })
+
+    const iconSrc = computed(() => {
+        try {
+            return new URL(props.icon, import.meta.url).href
+        } catch {
+            return props.icon
+        }
+    })
 </script>
 <template>
     <RouterLink  
@@ -44,7 +53,7 @@
         :to="props.link" 
         :class="`custom-button text-white flex gap-4 items-center justify-between font-bold ${props.firstView&&'firstView'} ${normalButton&&'normal-floating'} ${widthFull?'widthFullInSmall':'w-fit'}`">
         {{ props.textInside }}
-        <img :src="require(props.icon)" alt="Icon" :class="`${locale==='ar'&&'rotate-180'}`">
+        <img :src="iconSrc" alt="Icon" :class="`${locale==='ar'&&'rotate-180'}`">
     </button>
 </template>
 
