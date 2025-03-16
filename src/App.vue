@@ -21,12 +21,12 @@
         <component :is="Component" />
       </Transition>
     </RouterView>
-    <ButtonApplyNow v-if="route.path!=='/'"/>
+    <ButtonApplyNow v-if="route.path!=='/'&&!route.path.includes('/gallery')"/>
   </main>
   <footer v-if="route.path!=='/'">
-    <Footer />
-  </footer>
+    <Footer />  </footer>
 </template>
+
 
 <style scoped>
 .page-enter-active,

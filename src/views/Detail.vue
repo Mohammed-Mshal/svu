@@ -3,15 +3,8 @@
     import { onMounted, ref } from 'vue';
     import { useI18n } from 'vue-i18n';
     import { useRoute, useRouter } from 'vue-router';
-    import {Motion} from 'motion-v'
-    import CloseIcon from '@/assets/images/close.svg'
-    import { Swiper, SwiperSlide } from 'swiper/vue';
-    import {EffectFade,Autoplay} from 'swiper/modules';
     import 'swiper/css';
     import 'swiper/css/effect-fade';
-    import Image1 from '@/assets/images/gallery1.png'
-    import Image2 from '@/assets/images/gallery2.png'
-    import Image3 from '@/assets/images/gallery3.png'
     const router=useRouter()
     const route=useRoute()
     const {t}=useI18n()
@@ -71,118 +64,33 @@
 
 <template>
     <div class="detail" ref="detailWrapper">
-        <Loading :titleLoading="`${sectionName}`" />
-        <Motion as="div"
-        :initial="{
-            x:2000,
-            opacity:0
-        }"
-        :animate="{
-            x:0,
-            opacity:1,
-        }"
-        :transition="{
-            duration:2, 
-            delay:8
-        }"
-         class="detail-box bg-white min-h-full max-w-[942px] w-full pt-8 lg:pb-20 md:pb-16 pb-12 lg:px-16 md:px-12 sm:px-10 px-8">
-            <div class="header-box flex justify-end">
-                <RouterLink @click="router.go(-1)" to=""  class="flex items-center text-black font-bold text-xl gap-2.5 group">
-                    Close 
-                    <div class="icon h-6 w-6 p-1 rounded-lg border  transition-all duration-200 group-hover:p-0.5">
-                        <img :src="CloseIcon" alt="Close">
-                    </div>
-                </RouterLink>
-            </div>
-            <div class="body-box">
-                <h2 class="title text-black">
-                        <Motion 
-                                as="span"
-                                class=""
-                                :initial="{
-                                    y:200,
-                                    opacity:0
-                                }"
-                                :animate="{
-                                    y:0,
-                                    opacity:1
-                                }"
-                                :transition="{
-                                    duration:0.3,
-                                    type:'spring',
-                                    mass:20,
-                                    stiffness:200,
-                                    damping:120,
-                                    delay:1+index*0.1
-                                }"
-                                v-for="(letter,index) in sectionName" :key="index"
-                                >
-                                {{ letter }}
-                        </Motion>
-                </h2>
-                <div class="overview-gallery text-black">
-                    <RouterLink :to="`/home/detail/${route.params.sectionName}/gallery`" class="preview-gallery">
-                        <span class="textView">
-                            View Gallery
-                        </span>
-                        <div class="image">
-                            <img src="/src/assets/images/plusWhite.svg" alt="Plus">
-                        </div>
-                    </RouterLink>
-                    <div class="container-slider" >
-                            <Swiper
-                            dir="ltr"
-                            :modules="[EffectFade,Autoplay]"
-                            :centeredSlides="true"
-                            :autoplay="{
-                                delay: 2500,
-                                disableOnInteraction: false,
-                            }"
-                            :loop="true"
-                            effect="fade"
-                        >
-                            <swiper-slide>
-                                <div class="container-slide">
-                                    <img :src="Image1" alt="Gallery">
-                                </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="container-slide">
-                                    <img :src="Image2" alt="Gallery">
-                                </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="container-slide">
-                                    <img :src="Image3" alt="Gallery">
-                                </div>
-                            </swiper-slide>
-                        </Swiper>
-                    </div>
-                </div>
-                <div class="description text-black lg:text-xl md:text-lgm">
-                    {{ elementDetail.description }}
-                </div>
-            </div>
-        </Motion>
+        <RouterView v-slot="{ Component }">
+            <Transition name="gallery" mode="out-in">
+                <component :is="Component" :listOptions="props.listOptions"/>
+            </Transition>
+        </RouterView>
     </div>
 </template>
 
 <style>
 .detail{
+    flex: 1; 
+    
+}
+.detailSectionWrapper{
     display: flex;
     justify-content: flex-end;
-    flex: 1; 
     color: #FFF;
     padding-block: 20px;
     opacity: 0;
     height: 100%;
     overflow: hidden;
 }
-.detail .body-box .title{
+.detailSectionWrapper .body-box .title{
     font-size: clamp(36px,3.6vw,80px);
     font-weight: bold;
 }
-.detail .body-box .description{
+.detailSectionWrapper .body-box .description{
     overflow-y: auto;
     max-height: 250px;
     @media (max-width:992px) {
